@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ky tu co phai ky tu so hay khong</title>
+    <script>
+        function checkCharacters(characterX) {
+            if (characterX >= 0 && characterX <= 9) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<script>
+    var Characters = prompt("nhap 1 so hoac ky tu : ");
+    var result = checkCharacters(Characters);
+    document.write("ket qua la: " + result);
+</script>
+</body>
+</html>

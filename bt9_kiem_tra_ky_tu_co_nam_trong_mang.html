@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ky tu bat ky co nam trong mang hay khong</title>
+</head>
+<body>
+    <script>
+            var numbX = parseInt(prompt(" nhap do dai mang : "));
+            var arrayX = new Array(numbX);
+            for (var i = 1; i < numbX; i++) {
+                arrayX[i] = prompt(" nhap gia tri thu " + i);
+            }
+            alert(arrayX);
+            // nhap mang bat ky
+
+        function isChracter(rdCharacterX) {
+            var count = 0; //bien dem so lan
+            for (var j = 1 ; j < numbX ; j++) {
+                if (rdCharacterX === arrayX[i]) {
+                    count = count + 1;
+                }
+            }if (count === 0 ) {
+                alert("-1");
+            }
+            return "so lan lap lai cua gia tri nhap vao la: " + count;
+        }
+        var characterX = prompt("nhap ky tu: ");
+        var resultX = isChracter(characterX);
+        alert(resultX);
+    </script>
+</body>
+</html>

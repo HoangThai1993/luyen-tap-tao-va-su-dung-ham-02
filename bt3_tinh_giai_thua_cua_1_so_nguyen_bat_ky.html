@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh giai thua cua 1 so nguyen bat ky</title>
+    <script>
+        function caculatedFactorial(numb) {
+            var Factorial = 1;
+            for (var i = 1 ; i <= numb ; i++) {
+                Factorial = Factorial * i;
+            }
+            return Factorial;
+        }
+        //ham tinh giai thua cua 1 so
+    </script>
+</head>
+<body>
+    <script>
+        var numbX = parseInt(prompt("Nhap so duong can tinh: "));
+        var FactorialX = caculatedFactorial(numbX);
+        document.write(" giai thua cua " + numbX + " la " + FactorialX);
+        //su dung ham tinh giai thua
+    </script>
+</body>
+</html>

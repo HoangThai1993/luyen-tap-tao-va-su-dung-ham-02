@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra ky tu nguyen am</title>
+    <script>
+        function isVowel(character) {
+            switch (character) {
+                case "a":
+                case "A":
+                case "e":
+                case "E":
+                case "o":
+                case "O":
+                case "i":
+                case "I":
+                case "u":
+                case "U":
+                    alert( character + " la nguyen am ");
+                    break;
+                default:
+                    alert( character + " khong la nguyen am ");
+                    break;
+            }
+        }
+        var voewl = prompt("nhap vao ky tu bat ky: ");
+        var result = isVowel(voewl);
+        alert(result);
+    </script>
+</head>
+<body>
+</body>
+</html>

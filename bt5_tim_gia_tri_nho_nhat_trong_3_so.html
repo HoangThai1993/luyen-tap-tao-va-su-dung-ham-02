@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim gia tri nho nhat</title>
+    <script>
+        function checkInteger(numbX1,numbX2,numbX3) {
+
+            var minX = numbX1; //gan gia tri nho nhat cho numbX1
+
+            if (numbX2 < minX) {
+
+                minX = numbX2;
+
+            } else if (numbX3 < minX) {
+
+                minX = numbX3;
+            }
+
+            return minX;
+        }
+        //ham kiem tra
+    </script>
+</head>
+<body>
+    <script>
+        var numb1 = parseInt(prompt("nhap so dau tien : "));
+
+        var numb2 = parseInt(prompt("nhap so thu 2 : "));
+
+        var numb3 = parseInt(prompt("nhap so thu 3 : "));
+
+        var result = checkInteger(numb1,numb2,numb3);
+
+        document.write("gia tri nho nhat la: " + result );
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tinh dien tich chu vi hinh tron</title>
+    <script>
+        function caculatedArea(radius) {
+            var result = 3.14*radius*radius;
+            return result;
+
+        }
+        //ham tinh dien tich hinh tron
+        function caculatedPerimeter (radius){
+            var result = 3.14*3.14*radius;
+            return result;
+        }
+        //ham tinh chu vi hinh tron
+    </script>
+</head>
+<body>
+    <script>
+        var radius = parseInt(prompt("nhap ban kinh :"));
+        var area = caculatedArea(radius);
+        document.write("dien tich cua hinh tron la : " +  area + '<br>' );
+        var perimeter = caculatedPerimeter(radius);
+        document.write("dien tich cua hinh tron la : " + perimeter);
+        // su dung ham tinh chu vi, dien tich hinh tron
+    </script>
+</body>
+</html>
